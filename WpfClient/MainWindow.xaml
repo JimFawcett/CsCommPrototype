@@ -1,0 +1,83 @@
+﻿<!-- 
+/////////////////////////////////////////////////////////////////////////
+// MainWindow.xaml - CommService GUI Client                            //
+// ver 1.0                                                             //
+// Jim Fawcett, CSE681 - Software Modeling and Analysis, Project #4    //
+/////////////////////////////////////////////////////////////////////////
+-->
+<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="565">
+  <Grid>
+    <TabControl x:Name="tabControl">
+      <TabItem Header="Connect">
+        <Grid Background="#FFE5E5E5">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="75"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <Label Grid.Row="0" Grid.Column= "0" Height="20" VerticalAlignment="Bottom" Margin="15 0 15 0" Padding="5 0 5 0">Remote Address</Label>
+          <Label Grid.Row="0" Grid.Column= "1" Width="50" Height="20" VerticalAlignment="Bottom" Margin="15 0 15 0" Padding="5 0 5 0">Port</Label>
+          <Label Grid.Row="0" Grid.Column= "2" Width="50" Height="20" VerticalAlignment="Bottom" Margin="15 0 15 0" Padding="5 0 5 0"></Label>
+          <Label Grid.Row="0" Grid.Column= "3" Width="150" Height="20" VerticalAlignment="Bottom" Margin="15 0 15 0" Padding="5 0 5 0">Status</Label>
+          <TextBox Grid.Row="1" Grid.Column= "0" Name="rAddr" Width="130" Height="20" VerticalAlignment="Top" Margin="15 0"></TextBox>
+          <TextBox Grid.Row="1" Grid.Column= "1" Name="rPort" Width="50" Height="20" VerticalAlignment="Top" Margin="15 0"></TextBox>
+          <Button Grid.Row="1" Grid.Column= "2" Name="connect"  Height="20" VerticalAlignment="Top" Margin="15 0" RenderTransformOrigin="0.504,0.5" Click="start_Click">Start</Button>
+          <TextBox Grid.Row="1" Grid.Column= "3" Name="rStat" Height="20" VerticalAlignment="Top" Margin="15 0"></TextBox>
+          <Label Grid.Row="2" Grid.Column= "0" Height="20" VerticalAlignment="Bottom" Margin="15 0 15 0" Padding="5 0 5 0">Remote Address</Label>
+          <Label Grid.Row="2" Grid.Column= "1" Width="50" Height="20" VerticalAlignment="Bottom" Margin="15 0 15 0" Padding="5 0 5 0">Port</Label>
+          <Label Grid.Row="2" Grid.Column= "2" Width="50" Height="20" VerticalAlignment="Bottom" Margin="15 0 15 0" Padding="5 0 5 0"></Label>
+          <Label Grid.Row="2" Grid.Column= "3" Width="150" Height="20" VerticalAlignment="Bottom" Margin="15 0 15 0" Padding="5 0 5 0">Status</Label>
+          <TextBox Grid.Row="3" Grid.Column= "0" Name="lAddr" Width="130" Height="20" VerticalAlignment="Top" Margin="15 0"></TextBox>
+          <TextBox Grid.Row="3" Grid.Column= "1" Name="lPort" Width="50" Height="20" VerticalAlignment="Top" Margin="15 0"></TextBox>
+          <Button Grid.Row="3" Grid.Column= "2" Name="send" Height="20" VerticalAlignment="Top" Margin="15 0" RenderTransformOrigin="0.504,0.5" Click="send_Click">Send</Button>
+          <TextBox Grid.Row="3" Grid.Column= "3" Name="lStat" Height="20" VerticalAlignment="Top" Margin="15 0"></TextBox>
+          <ListBox Grid.Row="4" Grid.ColumnSpan="4" Name="sndmsgs" Margin="15 0 15 15" RenderTransformOrigin="0.5,0.5">
+            <ListBox.RenderTransform>
+              <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform AngleX="0.579"/>
+                <RotateTransform/>
+                <TranslateTransform X="1.072"/>
+              </TransformGroup>
+            </ListBox.RenderTransform>
+          </ListBox>
+          <ListBox Grid.Row="5" Grid.ColumnSpan="4" Name="rcvmsgs" Margin="15 0 15 15" RenderTransformOrigin="0.5,0.5">
+            <ListBox.RenderTransform>
+              <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform AngleX="0.579"/>
+                <RotateTransform/>
+                <TranslateTransform X="1.072"/>
+              </TransformGroup>
+            </ListBox.RenderTransform>
+          </ListBox>
+        </Grid>
+      </TabItem>
+      <TabItem Header="DB Operations">
+        <Grid Background="#FFE5E5E5"/>
+      </TabItem>
+      <TabItem Header="Launch Testers">
+        <Grid Background="#FFE5E5E5"/>
+      </TabItem>
+      <TabItem Header="Performance Assement">
+        <Grid Background="#FFE5E5E5"/>
+      </TabItem>
+    </TabControl>
+  </Grid>
+</Window>

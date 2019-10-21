@@ -1,0 +1,8 @@
+C:\Users\James\Desktop\CommPrototype\Client\bin\Debug\Client.exe.config
+C:\Users\James\Desktop\CommPrototype\Client\bin\Debug\Client.exe
+C:\Users\James\Desktop\CommPrototype\Client\bin\Debug\Client.pdb
+C:\Users\James\Desktop\CommPrototype\Client\bin\Debug\ICommService.dll
+C:\Users\James\Desktop\CommPrototype\Client\bin\Debug\ICommService.pdb
+C:\Users\James\Desktop\CommPrototype\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\James\Desktop\CommPrototype\Client\obj\Debug\Client.exe
+C:\Users\James\Desktop\CommPrototype\Client\obj\Debug\Client.pdb
